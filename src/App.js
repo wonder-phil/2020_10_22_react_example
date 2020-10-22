@@ -1,23 +1,28 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Hello from './components/Hello';
+import InputName from './components/InputName';
+import InputAddress from './components/InputAddress';
+import InputNumber from './components/InputNumber';
+
+import InputNameAddressNumber from './components/InputNameAddressNumber';
+
+
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          <h1> Happy Hacking! </h1>
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+          <Hello my_name="Phil" />
+          <Hello my_name="Shariq" />
+          <Hello my_name="Narendran" />
+          <Hello my_name="Jonathan" />
+          <InputNameAddressNumber />
       </header>
     </div>
   );
